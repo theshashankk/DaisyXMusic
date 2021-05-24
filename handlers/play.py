@@ -113,7 +113,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                 await f.close()
 
     image1 = Image.open("./background.png")
-    image2 = Image.open("etc/20210523_192720.png")
+    image2 = Image.open("etc/coffinof.png")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
@@ -121,7 +121,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     Image.alpha_composite(image5, image6).save("temp.png")
     img = Image.open("temp.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("etc/kanit-bold.otf", 32)
+    font = ImageFont.truetype("etc/font.otf", 32)
     draw.text((205, 550), f"Title: {title}...", (51, 215, 255), font=font)
     draw.text(
         (205, 590), f"Duration: {duration}", (255, 255, 255), font=font
@@ -551,7 +551,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**𝘾𝙐𝙍𝙍𝙀𝙉𝙏𝙇𝙔 𝙋𝙇𝘼𝙔𝙄𝙉𝙂**\n\n**🏷️Song: [{song_name}]({url})**\n⏱️Duration: {song_duration}\n💡Status: `Playing🎵`\nRequested By {request_by}\nPlaying In: {chat_title}**".format(
+        caption="**🏷️Song: [{song_name}]({url})**\n⏱️Duration: {song_duration}\n💡Status: `Playing🎵`\nRequested By {request_by}\nPlaying In: {chat_title}**".format(
                 song_name=title,
                 url=url,   
                 song_duration=duration,
