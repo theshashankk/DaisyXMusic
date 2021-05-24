@@ -30,7 +30,7 @@ maintain by SPRAYGOD..✨
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "💁 Assistant 💁", url="https://t.me/sprayXmusicXPlayer"
+                        "💁 Assistant 💁", url="https://t.me/SPRAY_x_ASSISTANT"
                     )],
                     [ 
                     InlineKeyboardButton(
