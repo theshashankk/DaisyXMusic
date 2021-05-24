@@ -13,20 +13,20 @@ async def start_(client: Client, message: Message):
     await message.reply_text(                               
         f"""<b>Hey {message.from_user.mention} !!
 \nI'm Here to Play music In your voice chat...
-maintain by @sprayXmusicXSupport..✨
+maintain by SPRAYGOD..✨
 \nuse this inline buttons to know more 😉😉.
 </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🚑 Support group 🚑", url="t.me/sprayXmusicXsupport")
+                        "🚑 Support group 🚑", url="https://t.me/TWO_AM_CHATS")
                   ],[
                     InlineKeyboardButton(
-                        "ℹ️ updates channel", url="https://t.me/sprayXmusicX_updates"
+                        " channel", url="https://t.me/TWO_AM_FEELINGS"
                     ),
                     InlineKeyboardButton(
-                        "👨‍💻 Creator 👨‍💻", url="https://t.me/xD_shashank"
+                        "👨‍💻 Creator 👨‍💻", url="https://t.me/SPR4YGOD"
                     )
                 ],[ 
                     InlineKeyboardButton(
@@ -34,7 +34,7 @@ maintain by @sprayXmusicXSupport..✨
                     )],
                     [ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/sprayXmusicXmusic_bot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/spray_X_bot?startgroup=true"
                     )]
             ]
         ),
@@ -48,7 +48,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🚑 SUPPORT GROUP 🚑", url="https://t.me/sprayXmusicXsupport")
+                        "🚑 SUPPORT GROUP 🚑", url="https://t.me/TWO_AM_CHATS")
                 ]
             ]
         )
@@ -61,7 +61,7 @@ async def ghelp(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🆘 help 🆘", url="https://t.me/sprayXmusicXmusic_bot?start=help")
+                        "🆘 help 🆘", url="https://t.me/spray_X_bot?start=help")
                 ]
             ]
         )
@@ -98,10 +98,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/sprayXmusicX_updates"
+                        "🔊 Channel", url="https://t.me/TWO_AM_FEELINGS"
                     ),
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/sprayXmusicXsupport"
+                        "💬 Group", url="https://t.me/TWO_AM_CHATS"
                     )
                 ]
             ]
